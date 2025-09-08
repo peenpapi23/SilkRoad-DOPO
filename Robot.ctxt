@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Robot
+comment0.text=\r\n\ Clase\ Robot\:\ representa\ un\ robot\ gr\u00E1fico\r\n\ con\ cabeza,\ ojos\ y\ boca.\r\n
+comment1.params=x\ y
+comment1.target=Robot(int,\ int)
+comment1.text=\r\n\ Constructor\ de\ Robot\r\n\ @param\ x\ coordenada\ X\r\n\ @param\ y\ coordenada\ Y\r\n
+comment2.params=
+comment2.target=int\ getX()
+comment3.params=
+comment3.target=int\ getY()
+comment4.params=
+comment4.target=void\ makeInvisible()
+numComments=5

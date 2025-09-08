@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Cell
+comment1.params=x\ y\ id
+comment1.target=Cell(int,\ int,\ int)
+comment1.text=Constructor\ con\ id\ expl\u00EDcito
+comment10.params=
+comment10.target=void\ makeInvisible()
+comment11.params=
+comment11.target=void\ makeVisible()
+comment2.params=x\ y
+comment2.target=Cell(int,\ int)
+comment2.text=Constructor\ que\ asigna\ id\ autom\u00E1ticamente
+comment3.params=
+comment3.target=int\ getX()
+comment4.params=
+comment4.target=int\ getY()
+comment5.params=
+comment5.target=int\ getId()
+comment6.params=
+comment6.target=void\ addRobot()
+comment7.params=
+comment7.target=void\ addStore()
+comment8.params=
+comment8.target=void\ removeRobot()
+comment9.params=
+comment9.target=void\ removeStore()
+numComments=12
