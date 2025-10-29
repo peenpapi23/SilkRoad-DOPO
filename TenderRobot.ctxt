@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TenderRobot
+comment1.params=id\ tenges\ position
+comment1.target=TenderRobot(int,\ int,\ int)
+comment2.params=store
+comment2.target=void\ steal(Store)
+numComments=3

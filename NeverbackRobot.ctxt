@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=NeverbackRobot
+comment1.params=x\ y\ initialPos
+comment1.target=NeverbackRobot(int,\ int,\ int)
+comment2.params=
+comment2.target=boolean\ canReturn()
+numComments=3
