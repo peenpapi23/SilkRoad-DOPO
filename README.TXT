@@ -1,44 +1,45 @@
-Project "shapes"
-Authors: Michael Kolling and David J. Barnes
+# 🛣️ SilkRoad — Simulador de Robots y Tiendas
 
-This project is part of the material for the book
+## 📘 Descripción del Proyecto
+**SilkRoad** es una simulación interactiva desarrollada en **Java** que representa un tablero compuesto por **celdas (Cells)**, las cuales pueden contener **robots (Robots)** y **tiendas (Stores)** con distintos comportamientos.  
 
-   Objects First with Java - A Practical Introduction using BlueJ
-   David J. Barnes and Michael Kolling
-   Pearson Education, 2002
+El objetivo del proyecto fue aplicar conceptos avanzados de **Programación Orientada a Objetos (POO)**, incluyendo:
+- Herencia y polimorfismo  
+- Encapsulamiento  
+- Sobrecarga y sobrescritura de métodos  
+- Manipulación de colecciones (`ArrayList`)  
+- Visualización gráfica mediante figuras (clases `Rectangle`, `Triangle`, etc.)  
 
-It is discussed in chapter 1.
+---
 
-This is a very simple project to demonstrate some characteristics of
-objects.
+## 🧩 Funcionalidades Principales
 
-You can create various shapes, and you will see, if you do, that those
-shapes are drawn on screen (in a window that we call the "canvas").
+### 🦾 Robots
+- Los **robots** pueden moverse a lo largo del tablero, gastar o ganar recursos (tenges), e interactuar con tiendas.  
+- Cada movimiento tiene un **costo asociado** según la distancia recorrida.  
+- Existen varios tipos de robots especializados, como `TenderRobot` o `NeverbackRobot`.
 
-You can then manipulate these objects: change their position, size and 
-colour. Try it out: create a few different squares, triangles and circles.
+### 🏠 Tiendas (Stores)
+Las **tiendas** son puntos clave del tablero. Cada una tiene su propio comportamiento cuando un robot llega:
+- 🟢 **Store (base):** almacena y regenera recursos.  
+- 🤖 **AutonomousStore:** se autorregenera de forma independiente.  
+- ⚔️ **FighterStore:** puede defenderse y limitar el robo de recursos.  
+- 💘 **LoveStore:** si dos robots coinciden en la misma celda, crea un **nuevo robot** (¡la “tienda motel” del sistema!).  
 
-This project is designed as a first example of object-oriented programming.
-It illustrates a number of concepts:
+Cada tienda utiliza un esquema de colores aleatorio y cambia visualmente según su estado (vacía o con recursos).
 
- - a Java project (application) is a collection of classes
- - objects can be created from classes
- - from any one class, many objects may be created
- - objects have operations (methods)
- - operations can have parameters
- - parameters have types (at least String and int)
- - objects hold data (fields)
- - the operations and fields are common to all objects
- - the values stored in the fields can be different for each object
+---
 
-The project also demonstrates
+## ⚙️ Estructura del Proyecto
 
- - BlueJ object creation
- - interactive method invocation
- - parameter passing
-
-A good second project to look at after this is "picture", which adds a class
-to those ones in this project. That class (named "Picture") uses the shapes
-to draw a picture. It can be used to experiment with coding.
-
-Michael Kolling, July 2000
+```plaintext
+src/
+├── Cell.java              # Representa una celda del tablero
+├── Robot.java             # Clase base de los robots
+├── Store.java             # Clase base de las tiendas
+├── AutonomousStore.java   # Tienda con regeneración automática
+├── FighterStore.java      # Tienda defensiva
+├── LoveStore.java         # Tienda especial (motel)
+├── SilkRoad.java          # Controlador principal del juego
+├── Rectangle.java / Triangle.java  # Clases gráficas
+└── ... (otras clases de soporte)
