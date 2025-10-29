@@ -18,7 +18,6 @@ comment5.target=void\ erase(java.lang.Object)
 comment5.text=\r\n\ Erase\ a\ given\ shape's\ from\ the\ screen.\r\n\ @param\ \ referenceObject\ \ the\ shape\ object\ to\ be\ erased\ \r\n
 comment6.params=colorString
 comment6.target=void\ setForegroundColor(java.lang.String)
-comment6.text=\r\n\ Set\ the\ foreground\ colour\ of\ the\ Canvas.\r\n\ @param\ \ newColour\ \ \ the\ new\ colour\ for\ the\ foreground\ of\ the\ Canvas\ \r\n
 comment7.params=milliseconds
 comment7.target=void\ wait(int)
 comment7.text=\r\n\ Wait\ for\ a\ specified\ number\ of\ milliseconds\ before\ finishing.\r\n\ This\ provides\ an\ easy\ way\ to\ specify\ a\ small\ delay\ which\ can\ be\r\n\ used\ when\ producing\ animations.\r\n\ @param\ \ milliseconds\ \ the\ number\ \r\n

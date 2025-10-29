@@ -1,3 +1,4 @@
+package shapes;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
@@ -26,7 +27,7 @@ public class Canvas{
      */
     public static Canvas getCanvas(){
         if(canvasSingleton == null) {
-            canvasSingleton = new Canvas("BlueJ Shapes Demo", 700, 700, 
+            canvasSingleton = new Canvas("BlueJ Shapes Demo", 2000, 2000, 
                                          Color.white);
         }
         canvasSingleton.setVisible(true);
@@ -109,27 +110,23 @@ public class Canvas{
         redraw();
     }
 
-    /**
-     * Set the foreground colour of the Canvas.
-     * @param  newColour   the new colour for the foreground of the Canvas 
-     */
-    public void setForegroundColor(String colorString){
-        if(colorString.equals("red"))
-            graphic.setColor(Color.red);
-        else if(colorString.equals("black"))
-            graphic.setColor(Color.black);
-        else if(colorString.equals("blue"))
-            graphic.setColor(Color.blue);
-        else if(colorString.equals("yellow"))
-            graphic.setColor(Color.yellow);
-        else if(colorString.equals("green"))
-            graphic.setColor(Color.green);
-        else if(colorString.equals("magenta"))
-            graphic.setColor(Color.magenta);
-        else if(colorString.equals("white"))
-            graphic.setColor(Color.white);
-        else
-            graphic.setColor(Color.black);
+    public void setForegroundColor(String colorString) {
+        switch (colorString.toLowerCase()) {
+            case "red":        graphic.setColor(Color.red); break;
+            case "black":      graphic.setColor(Color.black); break;
+            case "blue":       graphic.setColor(Color.blue); break;
+            case "yellow":     graphic.setColor(Color.yellow); break;
+            case "green":      graphic.setColor(Color.green); break;
+            case "magenta":    graphic.setColor(Color.magenta); break;
+            case "white":      graphic.setColor(Color.white); break;
+            case "orange":     graphic.setColor(Color.orange); break;
+            case "gray":       graphic.setColor(Color.gray); break;
+            case "darkgray":   graphic.setColor(Color.darkGray); break;
+            case "lightgray":  graphic.setColor(Color.lightGray); break;
+            case "cyan":       graphic.setColor(Color.cyan); break;
+            case "pink":       graphic.setColor(Color.pink); break;
+            default:           graphic.setColor(Color.black); break;
+        }
     }
 
     /**

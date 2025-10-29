@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=AutonomousStore
+comment1.params=x\ y\ tenges
+comment1.target=AutonomousStore(int,\ int,\ int)
+numComments=2

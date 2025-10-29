@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=SilkRoadContest
+comment1.params=days
+comment1.target=SilkRoadContest(int[][])
+comment2.params=
+comment2.target=int[]\ solve()
+comment3.params=slow
+comment3.target=void\ simulate(boolean)
+numComments=4
